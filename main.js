@@ -1,4 +1,4 @@
-$cuadro = document.querySelectorAll("#cuadro");
+$cuadro = document.querySelectorAll(".cuadro");
 
 const imagenes = [
 	"src/a.jpg",
@@ -26,8 +26,9 @@ function ordenarArrayAlAzar() {
 ordenarArrayAlAzar();
 
 $cuadro.forEach(function($cuadro, i) {
-	x = document.createElement("img");
-	x.className += " img-fluid";
-	x.src = imagenes[i];
-	$cuadro.appendChild(x);
+	imagen = document.createElement("img");
+	imagen.className += "rounded";
+
+	imagen.src = imagenes[i];
+	$cuadro.appendChild(imagen);
 });
