@@ -1,6 +1,6 @@
 const $cuadro = document.querySelectorAll(".cuadro");
 
-const imagenTapada = "imagenTapada.png";
+const imagenTapada = "imagentapada.png";
 
 const imagenes = [
 	"a.jpg",
