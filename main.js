@@ -1,24 +1,24 @@
 const $cuadro = document.querySelectorAll(".cuadro");
 
-const imagenTapada = "file:///D:/Github/MemoTest/src/imagenTapada.png";
+const imagenTapada = "/src/imagenTapada.png";
 
 const imagenes = [
-	"file:///D:/Github/MemoTest/src/a.jpg",
-	"file:///D:/Github/MemoTest/src/a.jpg",
-	"file:///D:/Github/MemoTest/src/b.jpg",
-	"file:///D:/Github/MemoTest/src/b.jpg",
-	"file:///D:/Github/MemoTest/src/c.jpg",
-	"file:///D:/Github/MemoTest/src/c.jpg",
-	"file:///D:/Github/MemoTest/src/d.jpg",
-	"file:///D:/Github/MemoTest/src/d.jpg",
-	"file:///D:/Github/MemoTest/src/f.jpg",
-	"file:///D:/Github/MemoTest/src/f.jpg",
-	"file:///D:/Github/MemoTest/src/g.jpg",
-	"file:///D:/Github/MemoTest/src/g.jpg",
-	"file:///D:/Github/MemoTest/src/e.jpg",
-	"file:///D:/Github/MemoTest/src/e.jpg",
-	"file:///D:/Github/MemoTest/src/h.jpg",
-	"file:///D:/Github/MemoTest/src/h.jpg"
+	"/src/a.jpg",
+	"/src/a.jpg",
+	"/src/b.jpg",
+	"/src/b.jpg",
+	"/src/c.jpg",
+	"/src/c.jpg",
+	"/src/d.jpg",
+	"/src/d.jpg",
+	"/src/f.jpg",
+	"/src/f.jpg",
+	"/src/g.jpg",
+	"/src/g.jpg",
+	"/src/e.jpg",
+	"/src/e.jpg",
+	"/src/h.jpg",
+	"/src/h.jpg"
 ];
 function ordenarArrayAlAzar() {
 	imagenes.sort(function(a, b) {
@@ -48,8 +48,9 @@ crearImagenTapada();
 function crearImagenTapada() {
 	$cuadro.forEach(function($cuadro, i) {
 		imagen = document.createElement("img");
-		let imagenDadaVuelta = imagenes[i];
-		imagen.className += "imagen"[i];
+		imagenDadaVuelta = imagenes[i];
+		debugger;
+		imagen.className += "magen[i];
 		imagen.src = imagenTapada;
 
 		imagen.onclick = function(e) {
