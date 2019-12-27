@@ -1,24 +1,24 @@
 const $cuadro = document.querySelectorAll(".cuadro");
 
-const imagenTapada = "/src/imagenTapada.png";
+const imagenTapada = "imagenTapada.png";
 
 const imagenes = [
-	"/src/a.jpg",
-	"/src/a.jpg",
-	"/src/b.jpg",
-	"/src/b.jpg",
-	"/src/c.jpg",
-	"/src/c.jpg",
-	"/src/d.jpg",
-	"/src/d.jpg",
-	"/src/f.jpg",
-	"/src/f.jpg",
-	"/src/g.jpg",
-	"/src/g.jpg",
-	"/src/e.jpg",
-	"/src/e.jpg",
-	"/src/h.jpg",
-	"/src/h.jpg"
+	"a.jpg",
+	"a.jpg",
+	"b.jpg",
+	"b.jpg",
+	"c.jpg",
+	"c.jpg",
+	"d.jpg",
+	"d.jpg",
+	"f.jpg",
+	"f.jpg",
+	"g.jpg",
+	"g.jpg",
+	"e.jpg",
+	"e.jpg",
+	"h.jpg",
+	"h.jpg"
 ];
 function ordenarArrayAlAzar() {
 	imagenes.sort(function(a, b) {
@@ -48,14 +48,12 @@ crearImagenTapada();
 function crearImagenTapada() {
 	$cuadro.forEach(function($cuadro, i) {
 		imagen = document.createElement("img");
-		imagenDadaVuelta = imagenes[i];
-		debugger;
-		imagen.className += "magen[i];
+		imagen.className += "imagen"[i];
 		imagen.src = imagenTapada;
 
 		imagen.onclick = function(e) {
 			imagen = e.target;
-			imagen.src = imagenDadaVuelta;
+			e.target.src = imagenes[i];
 			manejoClickCuadro(e);
 		};
 		$cuadro.appendChild(imagen);
