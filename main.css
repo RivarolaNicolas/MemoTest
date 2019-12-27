@@ -23,6 +23,10 @@ body {
 	background: #a558ae;
 }
 
-.bienvenida {
-	border-style: solid;
+.hidden {
+	display: none;
+}
+
+.deshabilitado {
+	opacity: 50%;
 }
