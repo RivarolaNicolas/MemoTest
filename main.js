@@ -49,6 +49,7 @@ function crearImagenTapada() {
 	$cuadro.forEach(function($cuadro, i) {
 		imagen = document.createElement("img");
 		imagen.className += "imagen"[i];
+		imagen.className += "img-fluid";
 		imagen.src = imagenTapada;
 
 		imagen.onclick = function(e) {
