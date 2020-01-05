@@ -82,6 +82,7 @@ function manejoClickCuadro(e) {
 			e.target.className = "deshabilitado";
 			primerCuadro = null;
 		} else {
+			
 			setTimeout(() => {
 				primerCuadro.src = imagenTapada;
 				e.target.src = imagenTapada;
